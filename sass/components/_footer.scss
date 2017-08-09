@@ -1,0 +1,80 @@
+.footer-container{
+  @include breakpoint($tablet){
+    display:flex;
+  }
+  .footer-content{
+    @include breakpoint($mobile){
+      width:48%;
+      padding-top: 30px;
+      display:flex;
+    }
+    ul{
+      line-height:20px;
+      color: $dark-gray;
+    }
+    .first{
+      padding-top: 50px;
+    }
+    .second,.third{
+      @include breakpoint($mobile){
+        padding-top:50px;
+        padding-left:40px;
+      }
+      @include breakpoint($tablet){
+        padding-left:30px;
+      }
+      @include breakpoint($desktop){
+        padding-left:130px;
+      }
+    }
+    .footer-title{
+      font-family: 'roboto-bold';
+    }
+  }
+  .promo-content{
+    @include breakpoint($mobile){
+      padding-top: 80px;
+    }
+    @include breakpoint($tablet){
+      width:48%;
+    }
+    .footer-red{
+      color:$red;
+      font-family: 'roboto-bold';
+    }
+    .footer-label{
+      padding-top: 30px;
+      font-family: 'roboto-bold';
+      font-size: 23px;
+    }
+    .footer-para{
+      padding-top: 20px;
+      line-height: 25px;
+      color: $dark-gray;
+    }
+    .fourth{
+      p.articles{
+        padding-top: 40px;
+        color: $blue;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.footer-wrapper{
+  position:relative;
+}
+.footer-image{
+  @include breakpoint($mobile){
+    display:none;
+  }
+  @include breakpoint($tablet){
+    display: none;
+  }
+  @include breakpoint($desktop){
+    display: block;
+    position:absolute;
+    right: 49px;
+    bottom: 205px;
+  }
+}

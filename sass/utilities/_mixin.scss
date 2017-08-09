@@ -1,0 +1,51 @@
+@mixin flex{
+  display: flex;
+  flex-direction:row;
+}
+@mixin image_layout_tab{
+  margin: 2px;
+  height: 168px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+@mixin image_layout{
+  margin: 5px;
+  height: 168px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position:relative;
+}
+@mixin arrow_tag{
+  padding: 40px;
+  text-align: center;
+  color: #0000FF;
+  font-size: 18px;
+}
+@mixin border{
+  border-bottom: 3px solid $light-gray;
+  border-width: 2px;
+}
+@mixin number{
+  flex:1;
+  margin:5px;
+  background-size: auto 100%;
+}
+@mixin interest_image_tab{
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 15px;
+  font-family: roboto-bold;
+}
+@mixin interest_image{
+  width: 115px;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-size: 15px;
+  font-family: roboto-bold;
+}

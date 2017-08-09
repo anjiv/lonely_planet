@@ -1,0 +1,179 @@
+.header-top{
+  background: $banner;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity:0.8;
+  background-position: center;
+  .menu{
+    @include breakpoint($mobile){
+      padding-top:100px;
+    }
+    @include breakpoint($tablet){
+      display:flex;
+    }
+    .search{
+      @include breakpoint($tablet){
+        flex: 1;
+        display: flex;
+      }
+      i{
+        @include breakpoint($mobile){
+          font-size: 35px;
+        }
+        @include breakpoint($tablet){
+          padding-bottom: 30px;
+        }
+      }
+      p{
+        @include breakpoint($mobile){
+          display:inline;
+          font-size: 25px;
+          padding-left: 10px;
+          font-family: 'roboto-bold';
+        }
+        @include breakpoint($tablet){
+          padding-top: 10px;
+          padding-bottom: -9px;
+        }
+      }
+      h3{
+        @include breakpoint($mobile){
+          font-size: 28px;
+          font-family: 'roboto';
+          padding-left: 50px;
+        }
+        @include breakpoint($tablet){
+          font-size: 22px;
+          padding-top: 12px;
+          padding-left: 10px;
+        }
+      }
+    }
+    .title{
+      @include breakpoint($mobile){
+        text-align: center;
+        font-size: 40px;
+        font-family: 'roboto';
+        padding-left: 35px;
+        padding-top: 40px;
+      }
+      @include breakpoint($tablet){
+        flex: 1;
+        padding-top:0px;
+      }
+    }
+    .nav{
+      @include breakpoint($mobile){
+        padding-top: 40px;
+      }
+      @include breakpoint($tablet){
+        flex: 1;
+        display: flex;
+        padding-top:0px;
+      }
+      a{
+        @include breakpoint($mobile){
+          padding: 32px 0px 0px 54px;
+          font-size: 22px;
+          text-decoration: none;
+          color: $black;
+          font-family: 'roboto-bold';
+        }
+        @include breakpoint($tablet){
+          padding: 15px 0px 0px 40px;
+          font-size: 18px;
+        }
+      }
+      p{
+        @include breakpoint($mobile){
+          padding: 15px 0px 0px 53px;
+          font-size: 22px;
+          text-decoration: none;
+          color: $black;
+          font-family: 'roboto-bold';
+        }
+        @include breakpoint($tablet){
+          padding: 15px 0px 0px 40px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .search-border{
+    @include breakpoint($tablet){
+      border: 1px solid $black;
+    }
+  }
+  .content{
+    text-align:center;
+    padding-top: 130px;
+    p{
+      font-size: 90px;
+      font-family: 'roboto-bold';
+    }
+    h3{
+      padding-top: 20px;
+      font-size: 40px;
+      font-family: 'roboto';
+      font-style: italic;
+    }
+    .categories{
+      position: relative;
+      display: inline-block;
+      background-color: $yellow;
+      padding: 20px 36px 20px 25px;
+      font-size: 25px;
+      border-radius: 7px;
+      margin-top: 110px;
+      opacity: 0.8;
+      font-family: 'roboto-bold';
+      i{
+        position: absolute;
+        top: 27px;
+        right: 13px;
+        font-size: 10px;
+      }
+    }
+  }
+  .video{
+    @include breakpoint($mobile){
+      padding-top: 100px;
+    }
+    @include breakpoint($tablet){
+      display: flex;
+    }
+    .video-icon{
+      font-size: 82px;
+    }
+    .video-label{
+      @include breakpoint($mobile){
+        font-family: 'roboto-bold';
+        font-size: 26px;
+      }
+      @include breakpoint($tablet){
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      h3{
+        line-height: 40px;
+      }
+    }
+  }
+}
+.header-bottom{
+  p{
+    @include breakpoint($mobile){
+      font-size: 21px;
+      line-height: 37px;
+      color: $light-gray;
+      margin: 0 auto;
+      text-align: center;
+      padding: 35px;
+    }
+    @include breakpoint($tablet){
+      padding-left: 100px;
+      padding-right: 95px;
+    }
+  }
+}
+

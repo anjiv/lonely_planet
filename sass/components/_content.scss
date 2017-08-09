@@ -1,0 +1,655 @@
+.top-things{
+  p{
+    @include arrow_tag;
+  }
+  i{
+    margin-left:10px;
+  }
+}
+.images{
+  @include breakpoint($mobile){
+    position:relative;
+  }
+  @include breakpoint($tablet){
+    display:$f;
+    position:relative;
+  }
+  p{
+    @include breakpoint($mobile){
+      color:$white;
+      margin-left: 60px;
+      position: absolute;
+      top: 187px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    @include breakpoint($tablet){
+      top: 70px;
+      margin-left: 0px;
+    }
+    @include breakpoint($desktop){
+      top: 187px;
+      margin-left: 60px;
+    }
+  }
+  .diamond{
+    @include breakpoint($mobile){
+      text-align: center;
+      height: 20px;
+      width: 20px;
+      background-color: $whitesmoke;
+      transform: rotate(0deg);
+      margin-left: 130px;
+      position: absolute;
+      top: 200px;
+    }
+    @include breakpoint($tablet){
+      margin-left: 70px;
+      top: 85px;
+    }
+    @include breakpoint($desktop){
+      margin-left: 130px;
+      top: 200px;
+    }  }
+    .img{
+      @include breakpoint($mobile){
+        margin:5px 0;
+        padding-top:104.4%;
+        background-repeat: no-repeat;
+        position: relative;
+        background-size:cover;
+      }
+      @include breakpoint($tablet){
+        padding-top:25%;
+      }
+    }
+    .img1{
+      @include breakpoint($mobile){
+        background-image: $singapore;
+      }
+      @include breakpoint($tablet){
+        @include number;
+      }
+    }
+    .img2{
+      @include breakpoint($mobile){
+        background-image: $agra;
+      }
+      @include breakpoint($tablet){
+        @include number;
+      }
+    }
+    .img3{
+      @include breakpoint($mobile){
+        background-image: $bali;
+      }
+      @include breakpoint($tablet){
+        @include number;
+      }
+    }
+    .img4{
+      @include breakpoint($mobile){
+        background-image: $japan;
+      }
+      @include breakpoint($tablet){
+        @include number;
+      }
+    }
+  }
+  .explore{
+    img{
+      width: 100%;
+    }
+  }
+  .guides-content{
+    @include breakpoint($tablet){
+      @include flex;
+    }
+    .book{
+      @include breakpoint($tablet){
+        width:50%;
+      }
+      img{
+        @include breakpoint($mobile){
+          width: 100%;
+          padding: 50px 0px 0px 0px;
+        }
+        @include breakpoint($tablet){
+          padding: 203px 0px 0px 0px;
+        }
+      }
+    }
+    .travel-guides{
+      @include breakpoint($tablet){
+        width:50%;
+        padding-left:40px;
+        box-sizing:border-box;
+      }
+      .travel-image{
+        @include breakpoint($mobile){
+          background: $star, $star;
+          width: 100%;
+          height: 150px;
+          background-position: 30% 13%,98% 50%;
+          background-size: 160px,70px;
+          background-repeat: no-repeat, no-repeat;
+        }
+        @include breakpoint($tablet){
+          background-position: 40% 13%,98% 50%;
+        }
+        @include breakpoint($desktop){
+          background-position: 80% 13%,98% 50%;
+        }
+      }
+      .travel-heading{
+        h2{
+          @include breakpoint($mobile){
+            color:$red;
+            font-size:50px;
+            padding: 50px 0px 0px 0px;
+            text-align:center;
+          }
+          @include breakpoint($tablet){
+            padding: 50px 0px 0px 0px;
+            text-align:left;
+          }
+        }
+        p{
+          @include breakpoint($mobile){
+            font-size: 30px;
+            color: $light-gray;
+            padding: 18px 0px 0px 0px;
+            text-align:center;
+          }
+          @include breakpoint($tablet){
+            padding: 18px 0px 0px 0px;
+            text-align:left;
+          }
+        }
+      }
+      .travel-content{
+        @include breakpoint($mobile){
+          text-align:center;
+        }
+        @include breakpoint($tablet){
+          text-align:left;
+        }
+        p{
+          @include breakpoint($mobile){
+            font-size: 20px;
+            color: $dark-gray;
+            padding: 60px 0px 0px 0px;
+            text-align: left;
+            line-height: 31px;
+          }
+          @include breakpoint($tablet){
+            padding: 40px 0px 0px 0px;
+          }
+          @include breakpoint($desktop){
+            padding: 60px 0px 0px 0px;
+          }
+        }
+        .button{
+          @include breakpoint($mobile){
+            display:inline-block;
+            background-color: $blue;
+            margin: 30px auto 0px auto;
+            color: $white;
+            border-radius: 10px;
+            padding: 23px;
+          }
+          @include breakpoint($tablet){
+            display:inline-block;
+            line-height: 1em;
+            font-size: 16px;
+            margin-top: 60px;
+            padding:20px;
+          }
+        }
+      }
+    }
+  }
+  .interest-layout{
+    @include breakpoint($tablet){
+      display:$f;
+    }
+    .first-image{
+      @include breakpoint($tablet){
+        width:30%;
+      }
+      .image-border1{
+        @include breakpoint($mobile){
+          margin: 5px;
+          height: 350px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          color: $white;
+          background-image:$wildlife;
+          position:relative;
+        }
+        @include breakpoint($tablet){
+          margin: 5px ;
+        }
+        p.wildlife{
+          @include breakpoint($mobile){
+            border-top: 2px solid $orange;
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+            font-size: 50px;
+            font-family: 'roboto-bold';
+          }
+          @include breakpoint($tablet){
+            width: 275px;
+          }
+        }
+      }
+    }
+    .second-image{
+      @include breakpoint($tablet){
+        @include flex;
+        flex-wrap:wrap;
+        width:75%;
+        position:relative;
+      }
+      .image-border-main{
+        @include breakpoint($tablet){
+          width:23%;
+          position: relative;
+        }
+      }
+      .image-border2{
+        @include breakpoint($mobile){
+          background-image:$adventure;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.adventure{
+          @include breakpoint($mobile){
+            border-top: 2px solid $cadetblue;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border3{
+        @include breakpoint($mobile){
+          background-image:$beaches;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.beaches{
+          @include breakpoint($mobile){
+            border-top: 2px solid $dark-gray;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border4{
+        @include breakpoint($mobile){
+          background-image:$kid;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.kid{
+          @include breakpoint($mobile){
+            border-top: 2px solid $green;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border5{
+        @include breakpoint($mobile){
+          background-image:$monuments;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.monuments{
+          @include breakpoint($mobile){
+            border-top: 2px solid $brown;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border6{
+        @include breakpoint($mobile){
+          background-image:$food;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.food{
+          @include breakpoint($mobile){
+            border-top: 2px solid $red;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border7{
+        @include breakpoint($mobile){
+          background-image:$party;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.party{
+          @include breakpoint($mobile){
+            border-top: 2px solid $black;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border8{
+        @include breakpoint($mobile){
+          background-image:$trekking;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.trekking{
+          @include breakpoint($mobile){
+            border-top: 2px solid $yellow;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+      .image-border9{
+        @include breakpoint($mobile){
+          background-image:$adrenaline;
+          @include image_layout;
+        }
+        @include breakpoint($tablet){
+          @include image_layout_tab;
+        }
+        @include breakpoint($desktop){
+          @include image_layout;
+        }
+        p.adrenaline{
+          @include breakpoint($mobile){
+            border-top: 2px solid $cadetblue;
+            @include interest_image;
+          }
+          @include breakpoint($tablet){
+            @include interest_image_tab;
+          }
+          @include breakpoint($desktop){
+            @include interest_image;
+          }
+        }
+      }
+    }
+  }
+  .article-content{
+    @include breakpoint($mobile){
+      text-align:center;
+    }
+    @include breakpoint($tablet){
+      width:75%;
+      padding-top:35px;
+    }
+  }
+  .articles{
+    p.articles{
+      @include arrow_tag;
+    }
+    i{
+      margin-left:10px;
+    }
+    .article1,.article2,.article3{
+      @include breakpoint($mobile){
+        margin: 0 auto;
+      }
+      @include breakpoint($tablet){
+        display: $f;
+        width: 70%;
+      }
+      .article-title{
+        font-size: 25px;
+        color: $black;
+        font-family: 'roboto-bold';
+        text-align:left;
+      }
+      .content1{
+        p{
+          font-size: 19px;
+          color: $dark-gray;
+          margin: 0;
+          text-align:left;
+          padding-top: 45px;
+          line-height: 23px;
+          font-family:'roboto';
+        }
+      }
+      .content2{
+        padding-top: 30px;
+        font-size: 15px;
+        color: $light-gray;
+        text-align:left;
+        font-family: 'roboto-thin';
+      }
+      .article-image{
+        @include breakpoint($mobile){
+          padding-top:35px;
+        }
+        @include breakpoint($tablet){
+          width:25%;
+          padding-left:20px;
+        }
+        img{
+          @include breakpoint($tablet){
+            width: 100%;
+            height: 100%;
+          }
+          @include breakpoint($desktop){
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .article2{
+      padding-top:47px;
+    }
+    .article3{
+      padding-top:47px;
+    }
+  }
+  .columns{
+    padding-bottom:40px;
+    @include breakpoint($tablet){
+      display:flex;
+      padding-bottom:100px;
+    }
+    .column1{
+      @include breakpoint($tablet){
+        width:50%;
+        padding-right: 20px;
+      }
+    }
+    .column2{
+      @include breakpoint($tablet){
+        width:50%;
+        padding-left:20px;
+      }
+      .block{
+        @include breakpoint($desktop){
+          padding-left:40px;
+        }
+      }
+    }
+    .block-image{
+      @include breakpoint($mobile){
+        width: 100%;
+      }
+      @include breakpoint($tablet){
+        max-width: 250px;
+      }
+      img{
+        @include breakpoint($mobile){
+          width:100%;
+        }
+        @include breakpoint($tablet){
+          height:153.5px;
+        }
+      }
+      .image-label{
+        @include breakpoint($mobile){
+          align-items:center;
+          border-bottom: 2px solid $light-gray;
+          padding-bottom: 10px;
+          display:flex;
+        }
+        p.red-block{
+          @include breakpoint($mobile){
+            line-height: 0px;
+            width: 30%;
+            background-color: red;
+            color: $white;
+            padding: 16px;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+          }
+          @include breakpoint($tablet){
+            font-size: 16px;
+          }
+        }
+        p.label{
+          @include breakpoint($mobile){
+            font-size:20px;
+            font-family: 'roboto';
+            color: $light-gray;
+            padding-top: 10px;
+          }
+          @include breakpoint($tablet){
+            font-size: 15px;
+            font-family: 'roboto';
+            color: $light-gray;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .block{
+    @include breakpoint($mobile){
+      padding-top:100px;
+    }
+    @include breakpoint($tablet){
+      // height: 180px;
+      display:flex;
+    }
+    .block-wrapper{
+      @include breakpoint($mobile){
+        padding-top:15px;
+      }
+      @include breakpoint($tablet){
+        padding-top:0px;
+        padding-left:10px;
+        width:60%;
+      }
+      @include breakpoint($desktop){
+        padding-top:15px;
+      }
+      .block-title{
+        @include breakpoint($mobile){
+          font-size: 25px;
+          color:$dark-gray;
+          font-family: 'roboto-bold';
+        }
+        @include breakpoint($tablet){
+          font-size: 18px;
+        }
+      }
+      .block-content{
+        @include breakpoint($mobile){
+          color:$light-gray;
+          font-family:'roboto';
+          padding-top: 15px;
+          font-size: 25px;
+          line-height: 30px;
+        }
+        @include breakpoint($tablet){
+          font-size: 15px;
+          line-height:0px;
+        }
+        @include breakpoint($tablet){
+          line-height: 21px;
+        }
+      }
+    }
+  }

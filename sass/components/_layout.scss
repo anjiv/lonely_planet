@@ -1,0 +1,76 @@
+html,body{
+  box-sizing: border-box;
+  font-family: 'roboto-thin';
+}
+.main-title{
+  @include breakpoint($mobile){
+    position:relative;
+    font-size: 45px;
+    text-align: center;
+    padding: 55px;
+    margin: 0 auto;
+    border-width: 3px;
+    color: $dark-gray;
+    font-family: 'roboto-thin';
+    &::after{
+      position: absolute;
+      bottom: 38px;
+      left: 45%;
+      width: 40px;
+      text-align: center;
+      height: 4px;
+      background-color:$red;
+      content: ' ';
+    }
+  }
+  @include breakpoint($tablet){
+    width: 40%;
+  }
+}
+.content-layout{
+  margin: 0 20px;
+  box-sizing:border-box;
+  @include breakpoint($desktop){
+    margin:0 auto;
+    max-width: 1260px;
+  }
+}
+.bottom-border{
+  @include border;
+  padding-bottom: 90px;
+}
+.article-border{
+  @include border;
+  padding: 20px;
+  width: 67%;
+  margin: 0 auto;
+}
+.title-layout{
+  position:relative;
+  font-size: 33px;
+  text-align: center;
+  padding: 55px;
+  margin: 0 auto;
+  border-width: 3px;
+  width: 40%;
+  color: $dark-gray;
+  &::after{
+    position: absolute;
+    bottom: 37px;
+    left: 45%;
+    width: 40px;
+    text-align: center;
+    height: 4px;
+    background-color: $red;
+    content: ' ';
+  }
+}
+.tour-layout{
+  width:100%;
+  margin:0 auto;
+  padding:0px 20px;
+  box-sizing:border-box;
+}
+img{
+  width:100%;
+}
