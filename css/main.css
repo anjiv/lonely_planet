@@ -1164,6 +1164,10 @@ table {
     .header-top .menu .nav a {
       padding: 15px 0px 0px 40px;
       font-size: 18px; } }
+  @media (min-width: 1024px) {
+    .header-top .menu .nav a.is-active {
+      border-bottom: 3px solid #000;
+      width: 20%; } }
   @media screen {
     .header-top .menu .nav p {
       padding: 15px 0px 0px 53px;

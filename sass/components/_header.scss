@@ -83,6 +83,12 @@
           padding: 15px 0px 0px 40px;
           font-size: 18px;
         }
+        &.is-active{
+          @include breakpoint($desktop){
+            border-bottom: 3px solid $black;
+            width: 20%;
+          }
+        }
       }
       p{
         @include breakpoint($mobile){
